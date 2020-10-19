@@ -24,7 +24,7 @@ public class BaseUI {
     MediaPage mediaPage;   //here all added
     StorePage storePage;
 
-    //Olekseii added on 10th lesson:
+    //on 10th lesson:
     SoftAssert softAssert = new SoftAssert();    //<-----------Soft assert
 
     @BeforeMethod
@@ -83,45 +83,3 @@ public class BaseUI {
         //driver.quit();
     }
 }
-
-
-
-
-//marked out Oleksii , skype 18 oct
-
-//    public void javaWaitSec() {
-//        //here must be max 20 sec
-//        wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.EMAIL_JOIN)));
-//        //here one after another if you need more time
-//        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-//
-//        driver.manage().window().maximize();   //make a window big!
-//        driver.get(Data.MAIN_URL);
-//    }
-
-
-
-///=========1=================================
-
-// //   with implisit wait
-//    @BeforeMethod
-//    public void setUp() {
-//        System.setProperty("webdriver.chrome.driver", "chromedriver");
-//        driver = new ChromeDriver();
-// //       implicit wait lesson6-7:
-//        wait = new WebDriverWait(driver);
-//        driver.manage().window().maximize();   //make a window big!
-//        driver.get(Data.MAIN_URL);
-//
-//   }
-//=============2==lesson 10===================
-// was before10 lesson and marked out on lesson 10 
-    //no implicit wait here specify, only in imports
-    //public void setUp() {
-    //    System.setProperty("webdriver.chrome.driver", "chromedriver.exe"); //.exe for windows
-    //    driver = new ChromeDriver();
-    // //   driver.manage().window().maximize();   //make a window big!
-    // //  driver.get(Data.MAIN_URL);
-//===========================================
-
-
