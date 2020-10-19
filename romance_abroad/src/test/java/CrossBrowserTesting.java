@@ -1,6 +1,3 @@
-//same as public class SearchPage extends BaseActions {
-//Oleksei - if isSelected() - pass test case, not selected - not pass/ or add  != :
-//Assert.assertTrue(!driver.findElement(Locators.LINK_SEARCH).is....
 
 
 import org.openqa.selenium.By;
@@ -48,7 +45,7 @@ public class CrossBrowserTesting extends BaseUI{
         //searchPage.getdropDownListSortBy = driver.findElement(Locators.SEARCH_DDL_SORT_BY)
         //searchPage.getDropDownListByValue(dropDownListSortBy, "date_created");
 
-        //Oleksii added new
+        //added new
         softAssert.assertAll();
         //will fail
     }
@@ -73,7 +70,7 @@ public class CrossBrowserTesting extends BaseUI{
         System.out.println(currentUrlSearch);
         Assert.assertEquals(currentUrlSearch, Data.expectedUrlSearch);
 
-        //Oleksii has on video:
+        //on video:
 //        currentUrlSearch = driver.getCurrentUrl();
 //        System.out.println(currentUrlSearch);
 //        Assert.assertEquals(currentUrlSearch,Data.expectedUrlSearch);
@@ -116,16 +113,11 @@ public class CrossBrowserTesting extends BaseUI{
    // }
 //}
 
-
-
-
-
-
 //assertions shows you result and if you have many assertions- its good
 //must be balanced important assertions
 //good if you have many assertions
 //intestNG not very many assertions
 //assert fail use with if/else statiment or will be difficult
 
-//Oleksii - can do Assert.assertTrue(driver.findElement(By.xpath("//a")).isSelected(),"Element is not displayed");
+//O=>can do Assert.assertTrue(driver.findElement(By.xpath("//a")).isSelected(),"Element is not displayed");
 //  or can do just if
